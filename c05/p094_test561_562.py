@@ -14,3 +14,20 @@ def display_inventory(inventory):
 
 
 display_inventory(stuff)
+
+dragon_loot = ['rope', 'torch', 'ruby']
+
+
+def add(inv, loot):
+    for thing in loot:
+        if thing in inv:
+            inv[thing] += 1
+        else:
+            inv[thing] = 1
+
+    display_inventory(inv)
+
+
+print('-' * 30)
+
+add(stuff, dragon_loot)
