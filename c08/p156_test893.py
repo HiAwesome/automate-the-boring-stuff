@@ -28,6 +28,7 @@ for filename in os.listdir(dir_path):
     full_file_path = dir_path + os.path.sep + filename
 
     if os.path.isfile(full_file_path) and filename.endswith('.txt'):
+        print('\nThis file match %s\nThese lines match: \n' % full_file_path)
 
         for line in open(full_file_path):
             if pattern.search(line):
