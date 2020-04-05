@@ -10,3 +10,7 @@ print(type(shhelf_file))
 print(shhelf_file['cats'])
 shhelf_file.close()
 
+shhelf_file = shelve.open('../resource/my_binary_data')
+print(list(shhelf_file.keys()))
+print(list(shhelf_file.values()))
+shhelf_file.close()
