@@ -1,7 +1,6 @@
 #! python3
 # Opens several Google search results.
 
-import sys
 import webbrowser
 
 import bs4
