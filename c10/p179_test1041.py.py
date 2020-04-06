@@ -1,23 +1,28 @@
 import logging
+# 这个导入避免每次使用 logging.debug 调用
+from logging import debug
+
+# disable 可以关闭 CRITICAL 级别以下的日志打印
+# logging.disable(logging.CRITICAL)
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-logging.debug('Start of progrma')
+debug('Start of progrma')
 
 
 def factorial(n):
-    logging.debug('Start of factorial(%s)' % n)
+    debug('Start of factorial(%s)' % n)
     total = 1
 
     for i in range(n + 1):
         total *= i
-        logging.debug('i is %s, total is %s' % (i, total))
+        debug('i is %s, total is %s' % (i, total))
 
-    logging.debug('End of factorial(%s)' % n)
+    debug('End of factorial(%s)' % n)
     return total
 
 
 print(factorial(5))
-logging.debug('End of program')
+debug('End of program')
 """
 0
 2020-04-06 18:40:17,141 - DEBUG - Start of progrma
