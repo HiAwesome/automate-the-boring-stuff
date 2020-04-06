@@ -28,5 +28,5 @@ def selectedCopy(source_dir, suffix, target_dir):
 
 test_dir = '/Users/moqi/Downloads/c09_test/'
 select_suffix = 'txt'
-save_dir = '/Users/moqi/Downloads/p171_copy_dir'
+save_dir = '/Users/moqi/Downloads/c09_test/p171_copy_dir'
 selectedCopy(test_dir, select_suffix, save_dir)
