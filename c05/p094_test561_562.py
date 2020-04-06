@@ -10,7 +10,7 @@ def display_inventory(inventory):
         print(str(v) + ' ' + k)
         item_total += v
 
-    print('Total number of items: ' + str(item_total))
+    print('Total number of items: %s' % item_total)
 
 
 display_inventory(stuff)
