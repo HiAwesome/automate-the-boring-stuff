@@ -17,6 +17,6 @@ except ValueError:
 
 i = 1
 while user_input != 1:
-    print('The ' + str(i) + ' time, the number is ' + str(user_input) + ' .')
+    print('The %d time, the number is %s.' % (i, user_input))
     user_input = collatz(user_input)
     i += 1
