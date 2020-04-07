@@ -3,4 +3,4 @@
 *.pyc
 
 # c11 使用 selenium 会每次刷新此 log 文件
-geckodriver.log
+c11/geckodriver.log
