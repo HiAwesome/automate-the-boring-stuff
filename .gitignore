@@ -7,3 +7,6 @@ resource/capitalsquize
 
 # c11 使用 selenium 会每次刷新此 log 文件
 c11/geckodriver.log
+
+# p227_test1251.py 测试保存 Excel
+resource/excel/example_copy.xlsx
