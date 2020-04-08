@@ -25,6 +25,8 @@ for i in range(1, 8, 2):
 
 print('-' * 50)
 
+print(sheet.max_row)
+print(sheet.max_column)
 print(sheet.calculate_dimension())
 
 """
@@ -42,5 +44,7 @@ Apples
 5 Apples
 7 Strawberries
 --------------------------------------------------
+7
+3
 A1:C7
 """
