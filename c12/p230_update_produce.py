@@ -21,6 +21,7 @@ for rowNum in range(2, sheet.max_row):
         sheet.cell(row=rowNum, column=2).value = price_update_dic[produceName]
         count += 1
 
+wb.save('../resource/excel/updateProduceSales.xlsx')
 print('End update produce and update %d record.' % count)
 
 """
