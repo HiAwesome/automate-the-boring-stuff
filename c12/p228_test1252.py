@@ -12,9 +12,14 @@ print(wb.sheetnames)
 wb.create_sheet(index=2, title='Middle Sheet')
 print(wb.sheetnames)
 
+wb.remove(wb['Middle Sheet'])
+wb.remove(wb['Sheet1'])
+print(wb.sheetnames)
+
 """
 ['Sheet']
 ['Sheet', 'Sheet1']
 ['First Sheet', 'Sheet', 'Sheet1']
 ['First Sheet', 'Sheet', 'Middle Sheet', 'Sheet1']
+['First Sheet', 'Sheet']
 """
