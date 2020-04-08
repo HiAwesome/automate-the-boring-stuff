@@ -10,3 +10,6 @@ c11/geckodriver.log
 
 # p227_test1251.py 测试保存 Excel
 resource/excel/example_copy.xlsx
+
+# p230_update_produce.py 测试
+resource/excel/produceSales.xlsx
