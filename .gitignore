@@ -13,3 +13,6 @@ resource/excel/example_copy.xlsx
 
 # p230_update_produce.py 测试
 resource/excel/updateProduceSales.xlsx
+
+# p232_test1270.py 测试
+resource/excel/styled.xlsx
