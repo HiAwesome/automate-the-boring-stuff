@@ -1,6 +1,8 @@
 import openpyxl
+# 看是否能根据坐标突破 26 个字母表的 column 限制
+# from openpyxl.utils import get_column_letter
 
-# 将这个数字改为 input 应付 25 个字母的乘法表
+# 将这个数字改为 input 应付 26 个字母的乘法表
 num = 10
 
 wb = openpyxl.Workbook()
