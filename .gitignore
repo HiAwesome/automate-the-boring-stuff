@@ -19,3 +19,6 @@ resource/excel/styled.xlsx
 
 # p242_multiplication_table.py 测试
 resource/excel/multiplicationTable.xlsx
+
+# p245_test1312.py 测试
+resource/pdf/encrypted.pdf
