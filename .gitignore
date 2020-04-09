@@ -16,3 +16,6 @@ resource/excel/updateProduceSales.xlsx
 
 # p232_test1270.py 测试
 resource/excel/styled.xlsx
+
+# p242_multiplication_table.py 测试
+resource/excel/multiplicationTable.xlsx
