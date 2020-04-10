@@ -25,3 +25,6 @@ resource/pdf/encrypted.pdf
 
 # p247_test1315 测试
 resource/pdf/rotatedPage.pdf
+
+# c13/p249_test1316.py 测试
+resource/pdf/watermarkedCover.pdf
