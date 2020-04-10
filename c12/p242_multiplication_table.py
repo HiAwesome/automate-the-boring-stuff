@@ -20,5 +20,5 @@ for i in range(2, num + 2):
         sheet[index] = (i - 1) * (j - 1)
 
 
-wb.save('../resource/excel/multiplicationTable.xlsx')
+wb.save('../resource/excel/output/multiplicationTable.xlsx')
 print('Done')

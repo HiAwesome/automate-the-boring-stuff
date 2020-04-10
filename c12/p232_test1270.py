@@ -13,5 +13,5 @@ a1 = sheet.cell(row=1, column=2)
 a1.font = italic24Font
 a1.value = 'Hello world'
 
-wb.save('../resource/excel/styled.xlsx')
+wb.save('../resource/excel/output/styled.xlsx')
 print('Done.')

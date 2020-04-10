@@ -15,7 +15,7 @@ print('-' * 50)
 wb = openpyxl.load_workbook('../resource/excel/example.xlsx')
 sheet = wb.active
 sheet.title = 'Spam Spam Spam'
-wb.save('../resource/excel/example_copy.xlsx')
+wb.save('../resource/excel/output/example_copy.xlsx')
 print('sava success...')
 
 """
