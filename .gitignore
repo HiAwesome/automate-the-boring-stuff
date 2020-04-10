@@ -28,3 +28,6 @@ resource/pdf/rotatedPage.pdf
 
 # c13/p249_test1316.py 测试
 resource/pdf/watermarkedCover.pdf
+
+# c13/p250_test1317.py 测试
+resource/pdf/encyptedMinutes.pdf
