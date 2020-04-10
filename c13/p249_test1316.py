@@ -13,7 +13,7 @@ for pageNum in range(1, reader.numPages):
     pageObj = reader.getPage(pageNum)
     witer.addPage(pageObj)
 
-resultFile = open('../resource/pdf/watermarkedCover.pdf', 'wb')
+resultFile = open('../resource/pdf/output/watermarkedCover.pdf', 'wb')
 witer.write(resultFile)
 resultFile.close()
 minutesFile.close()

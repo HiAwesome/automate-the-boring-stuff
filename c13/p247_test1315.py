@@ -7,7 +7,7 @@ page.rotateClockwise(90)
 writer = PyPDF2.PdfFileWriter()
 writer.addPage(page=page)
 
-resultFile = open('../resource/pdf/rotatedPage.pdf', 'wb')
+resultFile = open('../resource/pdf/output/rotatedPage.pdf', 'wb')
 writer.write(resultFile)
 resultFile.close()
 

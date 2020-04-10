@@ -9,7 +9,7 @@ for pageNum in range(reader.numPages):
     writer.addPage(reader.getPage(pageNum))
 
 writer.encrypt('test')
-resultPdf = open('../resource/pdf/encyptedMinutes.pdf', 'wb')
+resultPdf = open('../resource/pdf/output/encyptedMinutes.pdf', 'wb')
 writer.write(resultPdf)
 resultPdf.close()
 minutesFile.close()

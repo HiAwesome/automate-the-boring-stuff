@@ -8,29 +8,11 @@ resource/capitalsquize
 # c11 使用 selenium 会每次刷新此 log 文件
 c11/geckodriver.log
 
-# p227_test1251.py 测试保存 Excel
-resource/excel/example_copy.xlsx
+# 不需要保存的 excl 文件
+resource/excel/output/*
 
-# p230_update_produce.py 测试
-resource/excel/updateProduceSales.xlsx
+# 不需要保存的 pdf 文件
+resource/pdf/output/*
 
-# p232_test1270.py 测试
-resource/excel/styled.xlsx
-
-# p242_multiplication_table.py 测试
-resource/excel/multiplicationTable.xlsx
-
-# p245_test1312.py 测试
-resource/pdf/encrypted.pdf
-
-# p247_test1315 测试
-resource/pdf/rotatedPage.pdf
-
-# c13/p249_test1316.py 测试
-resource/pdf/watermarkedCover.pdf
-
-# c13/p250_test1317.py 测试
-resource/pdf/encyptedMinutes.pdf
-
-# c13/p250_combine_pdfs.py 测试
-resource/pdf/all.pdf
+# 不需要保存的 word 文件
+resource/word/output/*
