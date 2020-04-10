@@ -22,3 +22,6 @@ resource/excel/multiplicationTable.xlsx
 
 # p245_test1312.py 测试
 resource/pdf/encrypted.pdf
+
+# p247_test1315 测试
+resource/pdf/rotatedPage.pdf
