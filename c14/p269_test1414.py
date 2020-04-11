@@ -1,6 +1,6 @@
 import csv
 
-outputFile = open('../resource/csv/output/tttt.csv', 'w')
+outputFile = open('../resource/csv/output/tttt.tsv', 'w')
 writer = csv.writer(outputFile, delimiter='\t', lineterminator='\n\n')
 
 writer.writerow(['spam', 'eggs', 'bacon', 'ham'])
