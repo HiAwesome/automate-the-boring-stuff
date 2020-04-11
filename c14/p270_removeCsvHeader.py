@@ -17,6 +17,8 @@ for fileName in os.listdir('.'):
     outCsvFileObj = open(os.path.join('headerRemoved', fileName), 'w')
     writer = csv.writer(outCsvFileObj)
 
+    print('Removing header from %s' % fileName)
+
     for index in range(1, len(data)):
         writer.writerow(data[index])
 
