@@ -16,3 +16,6 @@ resource/pdf/output/*
 
 # 不需要保存的 word 文件
 resource/word/output/*
+
+# 不需要保存的 csv 文件
+resource/csv/output/*
