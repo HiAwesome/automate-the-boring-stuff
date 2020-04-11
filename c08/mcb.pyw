@@ -11,7 +11,7 @@ import sys
 
 import pyperclip
 
-mcbShelf = shelve.open('../resource/mcb')
+mcbShelf = shelve.open('../resource/binary/mcb')
 parameters = sys.argv
 print(parameters)
 

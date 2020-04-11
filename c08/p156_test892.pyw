@@ -1,6 +1,6 @@
 import re
 
-file = open('../resource/anav.txt')
+file = open('../resource/txt/anav.txt')
 context = file.read()
 all_pattern_words = 'ADJECTIVE|NOUN|ADVERB|VERB'
 
@@ -21,6 +21,6 @@ while True:
 
 print(context)
 
-new_file = open('../resource/anav_new.txt', 'w')
+new_file = open('../resource/txt/anav_new.txt', 'w')
 new_file.write(context)
 new_file.close()

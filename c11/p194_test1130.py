@@ -7,7 +7,7 @@ try:
 except Exception as error:
     print('These was a problem: %s.' % error)
 
-playFile = open('../resource/RomeoAndJuliet.txt', 'wb')
+playFile = open('../resource/txt/RomeoAndJuliet.txt', 'wb')
 
 for chunk in res.iter_content(100000):
     playFile.write(chunk)
