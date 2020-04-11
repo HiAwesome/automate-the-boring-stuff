@@ -3,7 +3,7 @@
 *.pyc
 
 # p149_random_quize_generator.py 会产生 70 个文件
-resource/capitalsquize
+resource/txt/capitalsquize
 
 # c11 使用 selenium 会每次刷新此 log 文件
 c11/geckodriver.log
