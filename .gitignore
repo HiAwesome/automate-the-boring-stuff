@@ -19,3 +19,6 @@ resource/word/output/*
 
 # 不需要保存的 csv 文件
 resource/csv/output/*
+
+# 不需要保存的 image 文件
+resource/image/output/*
