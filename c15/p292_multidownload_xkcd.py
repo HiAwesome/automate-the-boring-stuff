@@ -7,12 +7,11 @@ import threading
 import bs4
 import requests
 
-os.chdir('/Users/moqi/Downloads')
-xkcd_dir = 'multidownload_xkcd'
-os.makedirs(xkcd_dir, exist_ok=True)
-
 
 def downloadXkcd(startComic, endComic):
+    os.chdir('/Users/moqi/Downloads')
+    xkcd_dir = 'multidownload_xkcd'
+    os.makedirs(xkcd_dir, exist_ok=True)
     for urlNumber in range(startComic, endComic):
 
         # 跳过 0 和 404 页面
@@ -42,17 +41,19 @@ def downloadXkcd(startComic, endComic):
             imageFile.close()
 
 
-# 单线程调试，方便解决问题
-# downloadXkcd(1, 10)
+# 放在 main 方法里本地测试，否则外部调用会执行代码
+if __name__ == '__main__':
+    # 单线程调试，方便解决问题
+    # downloadXkcd(1, 10)
 
-# 多线程运行，更充分利用 CPU 和带宽
-downloadThreads = []
-for i in range(0, 1400, 100):
-    downloadThread = threading.Thread(target=downloadXkcd, args=(i, i + 99))
-    downloadThreads.append(downloadThread)
-    downloadThread.start()
+    # 多线程运行，更充分利用 CPU 和带宽
+    downloadThreads = []
+    for i in range(0, 1400, 100):
+        downloadThread = threading.Thread(target=downloadXkcd, args=(i, i + 99))
+        downloadThreads.append(downloadThread)
+        downloadThread.start()
 
-for downloadThread in downloadThreads:
-    downloadThread.join()
+    for downloadThread in downloadThreads:
+        downloadThread.join()
 
-print('All Done.')
+    print('All Done.')
