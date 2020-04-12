@@ -17,7 +17,10 @@ try:
         now = time.time()
         lapTime = round(now - lastTime, 2)
         totalTime = round(now - startTime, 2)
-        print('Lap #%s: %s (%s)' % (lapNum, totalTime, lapTime))
+        # print('Lap #%s: %s (%s)' % (lapNum, totalTime, lapTime))
+        # 优化显示
+        print('Lap #' + str(lapNum).rjust(2) + ':'
+              + str(totalTime).rjust(5) + ' (' + str(lapTime).rjust(5) + ')')
         lapNum += 1
         lastTime = now
 except KeyboardInterrupt:
