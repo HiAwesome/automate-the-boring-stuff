@@ -1,5 +1,9 @@
 import smtplib
 
+"""
+QQ 邮箱的 SMTP/IMAP 帮助信息参考：https://service.mail.qq.com/cgi-bin/help?subtype=1&&id=28&&no=331
+"""
+
 smtpObj = smtplib.SMTP('smtp.qq.com', 587)
 print(smtpObj.ehlo())
 print(smtpObj.starttls())
