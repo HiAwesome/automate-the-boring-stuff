@@ -1,14 +1,15 @@
+import json
+
 import imapclient
 # 参考这个链接 https://stackoverflow.com/a/43733889 安装 pip install pyzmail36
 import pyzmail
 import pprint
 
-imapObj = imapclient.IMAPClient('imap.qq.com', 993, ssl=True)
-account = input('Enter qq number: ')
-# 授权码
-authorization_code = 'glruysrasauwbegg'
+dic = json.loads(open('/Users/moqi/Documents/Doc/qq_imap_stmp_test.json').read())
 
-print(imapObj.login(account + '@qq.com', authorization_code))
+imapObj = imapclient.IMAPClient('imap.qq.com', 993, ssl=True)
+# 授权码
+print(imapObj.login(dic['from'] + '@qq.com', 'glruysrasauwbegg'))
 print(imapObj.welcome)
 
 print('\n', '-' * 50, '\n')
@@ -36,7 +37,6 @@ imapObj.logout()
 print('All Done.')
 
 """
-Enter qq number: ********************
 b'Success login ok'
 b'* OK [CAPABILITY IMAP4 IMAP4rev1 ID AUTH=LOGIN NAMESPACE] QQMail XMIMAP4Server ready'
 
