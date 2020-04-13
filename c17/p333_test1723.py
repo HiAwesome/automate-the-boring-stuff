@@ -1,13 +1,15 @@
 from PIL import Image
 
-cat = Image.open('../resource/image/zophie.png')
+from c17.c17_image_constant import *
+
+cat = Image.open(image_path + 'zophie.png')
 catCopy = cat.copy()
 
 faceIm = cat.crop((335, 345, 565, 560))
 print(faceIm.size)
 catCopy.paste(faceIm, (0, 0))
 catCopy.paste(faceIm, (400, 500))
-catCopy.save('../resource/image/output/pasted.png')
+catCopy.save(image_output_path + 'pasted.png')
 
 catWidth, catHeight = cat.size
 faceWidth, faceHeight = faceIm.size
@@ -18,9 +20,8 @@ for left in range(0, catWidth, faceWidth):
         print(left, top)
         catCopyTwo.paste(faceIm, (left, top))
 
-catCopyTwo.save('../resource/image/output/tiled.png')
+catCopyTwo.save(image_output_path + 'tiled.png')
 print('All done.')
-
 
 """
 (230, 215)
