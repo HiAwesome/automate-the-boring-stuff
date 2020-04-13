@@ -1,8 +1,10 @@
 from PIL import Image
 
-cat = Image.open('../resource/image/zophie.png')
+from c17.c17_image_constant import *
+
+cat = Image.open(image_path + 'zophie.png')
 croppedIm = cat.crop((335, 345, 565, 560))
-croppedIm.save('../resource/image/output/cropped.png')
+croppedIm.save(image_output_path + 'cropped.png')
 print('All done')
 
 """

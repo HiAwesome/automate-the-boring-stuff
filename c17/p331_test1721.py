@@ -1,6 +1,8 @@
 from PIL import Image
 
-cat = Image.open('../resource/image/zophie.png')
+from c17.c17_image_constant import *
+
+cat = Image.open(image_path + 'zophie.png')
 print(cat.size)
 print(cat.filename)
 print(cat.format)
@@ -10,9 +12,9 @@ cat.close()
 print()
 
 im = Image.new('RGBA', (100, 200), 'purple')
-im.save('../resource/image/output/purpleImage.png')
+im.save(image_output_path + 'purpleImage.png')
 im2 = Image.new('RGBA', (20, 20))
-im2.save('../resource/image/output/transparentImage.png')
+im2.save(image_output_path + 'transparentImage.png')
 print('Output Success')
 
 """
