@@ -4,6 +4,8 @@ import pyautogui
 
 """
 复制过来的代码，依然无法正常工作。
+不过运行结束时会在当前目录生成一个截图文件，名称类似：
+screenshot2020-0414_09-18-44-427623.png
 """
 
 print('Press Ctrl-C to quit.')
