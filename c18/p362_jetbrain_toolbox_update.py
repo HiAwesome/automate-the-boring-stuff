@@ -11,4 +11,4 @@ click_list = [
     ('projects/tools to return main interface', (1131, 56)),
 ]
 
-click_by_list(click_list, 2)
+click_by_list(click_list, 1)
