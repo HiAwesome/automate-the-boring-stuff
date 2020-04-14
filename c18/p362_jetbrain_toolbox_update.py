@@ -1,13 +1,14 @@
-import pyautogui
+from c18.c18_click import click_by_list
 
-print('click jetbrain toolbox icon')
-pyautogui.click((1314, 11), duration=2)
+"""
+自动点击 JetBrian ToolBox 的更新。
+要求 JetBrain ToolBox 处于坐标位置。
+"""
+click_list = [
+    ('jetbrain toolbox icon', (1314, 11)),
+    ('top right setting button', (1500, 52)),
+    ('check for updates', (1383, 145)),
+    ('projects/tools to return main interface', (1131, 56)),
+]
 
-print('click top right setting button')
-pyautogui.click((1500, 52), duration=2)
-
-print('click check for updates')
-pyautogui.click((1383, 145), duration=2)
-
-print('click projects/tools to return main interface')
-pyautogui.click((1131, 56), duration=2)
+click_by_list(click_list, 2)
