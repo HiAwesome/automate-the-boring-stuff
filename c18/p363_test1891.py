@@ -1,9 +1,14 @@
 import pyautogui
 
 """
-Hello world
-XYab
-print("hello world")!!!
+Hello worldHello worldHello world
+XYabXYabXyab
+print("hello world")!!!print("hello world")!print("hello world")!!!!!
+&&&
+
+
+
+
 
 """
 
@@ -16,4 +21,15 @@ pyautogui.typewrite(['a', 'b', 'left', 'left', 'X', 'Y'])
 
 pyautogui.click(558, 200)
 pyautogui.typewrite('print("hello world")!!!')
+
+pyautogui.click(558, 226)
+pyautogui.keyDown('shift')
+pyautogui.press('7')
+pyautogui.keyUp('shift')
+
+pyautogui.click(558, 271)
+# pyautogui.hotkey('command', 'a')
+# pyautogui.hotkey('command', 'c')
+# pyautogui.hotkey('command', 'v')
+# pyautogui.hotkey('command', 'z')
 
