@@ -1,8 +1,14 @@
 import pyautogui
 
-pyautogui.click(374, 223)
+"""
+Hello world Hello worldHello world
+XYab
+"""
+
+
+pyautogui.click(558, 153)
 pyautogui.typewrite('Hello world')
 
-"""
-Hello world Hello world
-"""
+pyautogui.click(558, 179)
+pyautogui.typewrite(['a', 'b', 'left', 'left', 'X', 'Y'])
+
